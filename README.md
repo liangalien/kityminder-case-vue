@@ -1,6 +1,22 @@
 KityMinder Case Vue(ElementUI)
 ==========
 
+百度脑图测试用例定制版
+==========
+
+## 说明
+基于[kityminder-case-core](https://github.com/liangalien/kityminder-case-core)，移植kityminder-editor部分功能和样式，使用element-ui重写
+
+
+React版本请移步：[kityminder-case-react](https://github.com/liangalien/kityminder-case-react)
+
+## 预览
+[![](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s1.png)](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s1.png)
+
+[![](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s2.png)](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s2.png)
+
+[![](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s3.png)](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s3.png)
+
 
 ## 使用说明
 ```bash
