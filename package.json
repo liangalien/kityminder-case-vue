@@ -2,9 +2,10 @@
   "name": "kityminder-case-vue",
   "description": "基于百度脑图，专为测试用例管理定制",
   "author": "shiqiangliang",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "license": "BSD-3-Clause",
   "private": false,
-  "main": "src/components/export.js",
+  "main": "src/export.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --env.dev",
     "build": "rimraf dist && webpack -p --progress --hide-modules"

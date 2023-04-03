@@ -4,7 +4,7 @@
 
 <script>
 
-    export default {
+    export default  {
         methods: {
             onFinished: function (minder, editor) {
                 console.log("脑图组件已挂载", minder, editor);

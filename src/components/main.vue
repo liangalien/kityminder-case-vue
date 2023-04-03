@@ -40,23 +40,23 @@
 
     import 'hotbox-ui/hotbox.css';
 
-    import UndoRedo from '@components/tabs/undoRedo';
-    import AppendNode from '@components/tabs/appendNode';
-    import Arrange from '@components/tabs/arrange';
-    import Operation from '@components/tabs/operation';
-    import Disabeld from '@components/tabs/disabeld';
-    import Priority from '@components/tabs/priority';
-    import Type from '@components/tabs/type';
+    import UndoRedo from './tabs/undoRedo';
+    import AppendNode from './tabs/appendNode';
+    import Arrange from './tabs/arrange';
+    import Operation from './tabs/operation';
+    import Disabeld from './tabs/disabeld';
+    import Priority from './tabs/priority';
+    import Type from './tabs/type';
 
-    import TemplateDropdown from '@components/tabs/template';
-    import Theme from '@components/tabs/theme';
-    import CopyStyle from '@components/tabs/copyStyle';
-    import Layout from '@components/tabs/layout';
-    import Expand from '@components/tabs/expand';
-    import Fonts from '@components/tabs/fonts';
-    import FontStyle from '@components/tabs/fontStyle';
+    import TemplateDropdown from './tabs/template';
+    import Theme from './tabs/theme';
+    import CopyStyle from './tabs/copyStyle';
+    import Layout from './tabs/layout';
+    import Expand from './tabs/expand';
+    import Fonts from './tabs/fonts';
+    import FontStyle from './tabs/fontStyle';
 
-    import Result from '@components/tabs/result';
+    import Result from './tabs/result';
 
     export default {
         components: {

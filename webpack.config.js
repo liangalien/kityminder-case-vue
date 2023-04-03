@@ -1,7 +1,7 @@
 const resolve = require('path').resolve
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const publicPath = ''
+const publicPath = '/'
 
 module.exports = (options = {}) => ({
   entry: {
@@ -12,7 +12,7 @@ module.exports = (options = {}) => ({
     path: resolve(__dirname, 'dist'),
     filename: options.dev ? '[name].js' : '[name].js?[chunkhash]',
     chunkFilename: '[id].js?[chunkhash]',
-    publicPath: options.dev ? '/assets/' : publicPath
+    publicPath: publicPath
   },
   module: {
     rules: [{
@@ -48,11 +48,6 @@ module.exports = (options = {}) => ({
     })
   ],
   resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-      '@images': resolve(__dirname, 'src/images'),
-      '@components': resolve(__dirname, 'src/components')
-    },
     extensions: ['.js', '.vue', '.json', '.css']
   },
   devServer: {

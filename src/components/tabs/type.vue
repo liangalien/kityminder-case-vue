@@ -11,11 +11,6 @@
 </template>
 
 <script>
-    import pd from '@images/pd.png';
-    import p1 from '@images/p1.png';
-    import p2 from '@images/p2.png';
-    import p3 from '@images/p3.png';
-
     export default {
         data() {
             return {

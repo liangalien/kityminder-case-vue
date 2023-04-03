@@ -20,7 +20,7 @@
 </template>
 
 <script>
-    import TemplatePng from '@images/template.png';
+    import TemplatePng from '../../images/template.png';
 
     export default {
         props: {

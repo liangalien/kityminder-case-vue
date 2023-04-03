@@ -23,16 +23,22 @@ React版本请移步：[kityminder-case-react](https://github.com/liangalien/kit
 npm i kityminder-case-vue
 ```
 
+## main.js
+```javascript
+import Vue from 'vue';
+import MinderCase from 'kityminder-case-vue';
+
+Vue.use(MinderCase);
+```
+
+## page.vue
 ```javascript
 <template>
     <minder-case @finished="onFinished" @change="onChange"/>
 </template>
 
 <script>
-    import MinderCase from 'kityminder-case-vue';
-    
     export default {
-        components: {MinderCase},
         methods: {
             onFinished: function (minder, editor) {
                 console.log("脑图组件已挂载", minder, editor);
