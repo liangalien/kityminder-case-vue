@@ -27,6 +27,7 @@
       </div>
 
       <div ref="container" class="minder-container"></div>
+      <navigator v-if="minder" :minder.sync="minder"/>
   </div>
 </template>
 
@@ -39,6 +40,8 @@
     import '../kityminder-editor/kityminder.editor.css';
 
     import 'hotbox-ui/hotbox.css';
+
+    import Navigator from './navigator';
 
     import UndoRedo from './tabs/undoRedo';
     import AppendNode from './tabs/appendNode';
@@ -60,7 +63,7 @@
 
     export default {
         components: {
-            UndoRedo, AppendNode, Arrange, Operation, Disabeld, Priority, Type,
+            Navigator, UndoRedo, AppendNode, Arrange, Operation, Disabeld, Priority, Type,
             TemplateDropdown, Theme, CopyStyle, Layout, Expand, Fonts, FontStyle, Result
         },
         props: {

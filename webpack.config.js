@@ -1,7 +1,7 @@
 const resolve = require('path').resolve
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const publicPath = '/'
+const publicPath = ''
 
 module.exports = (options = {}) => ({
   entry: {

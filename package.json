@@ -2,7 +2,7 @@
   "name": "kityminder-case-vue",
   "description": "基于百度脑图，专为测试用例管理定制",
   "author": "shiqiangliang",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "BSD-3-Clause",
   "private": false,
   "main": "src/export.js",
