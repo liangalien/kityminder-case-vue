@@ -1,7 +1,7 @@
 KityMinder Case Vue(ElementUI)
 ==========
 
-百度脑图测试用例定制版
+百度脑图测试用例定制版 For Vue
 ==========
 
 ## 说明
