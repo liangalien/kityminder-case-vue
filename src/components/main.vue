@@ -63,7 +63,7 @@
 
     export default {
         components: {
-            Navigator, UndoRedo, AppendNode, Arrange, Operation, Disabeld, Priority, Type,
+            Navigator, UndoRedo, AppendNode, Arrange, Operation, Disabled, Priority, Type,
             TemplateDropdown, Theme, CopyStyle, Layout, Expand, Fonts, FontStyle, Result
         },
         props: {
