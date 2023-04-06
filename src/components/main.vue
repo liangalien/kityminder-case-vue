@@ -7,7 +7,7 @@
                   <append-node v-if="minder" :minder.sync="minder"/>
                   <arrange v-if="minder" :minder.sync="minder"/>
                   <operation v-if="minder" :minder.sync="minder"/>
-                  <disabeld v-if="minder" :minder.sync="minder"/>
+                  <disabled v-if="minder" :minder.sync="minder"/>
                   <priority v-if="minder" :minder.sync="minder"/>
                   <type v-if="minder" :minder.sync="minder"/>
               </el-tab-pane>
@@ -47,7 +47,7 @@
     import AppendNode from './tabs/appendNode';
     import Arrange from './tabs/arrange';
     import Operation from './tabs/operation';
-    import Disabeld from './tabs/disabeld';
+    import Disabled from './tabs/disabled';
     import Priority from './tabs/priority';
     import Type from './tabs/type';
 
