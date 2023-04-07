@@ -3,6 +3,9 @@
         <el-row>
             <el-link @click="minder.execCommand('copystyle')" :underline="false" type="primary">
                 <i class="el-icon-copy-document"></i> 复制样式</el-link>
+
+            <el-link @click="minder.execCommand('clearstyle')" :underline="false" type="primary">
+                <i class="el-icon-delete-solid"></i> 清空样式</el-link>
         </el-row>
         <el-row>
                 <el-link @click="minder.execCommand('pastestyle')" :underline="false" type="primary">

@@ -6,8 +6,10 @@
         </el-row>
 
         <el-row>
-            <el-link @click="minder.execCommand('clearstyle')" :underline="false" type="primary">
-                <i class="el-icon-delete-solid"></i> 清空样式</el-link>
+            <el-tooltip content="调整视野中心位置到选中的节点上">
+                <el-link @click="minder.execCommand('camera', minder.getSelectedNode() || minder.getRoot(), 600)" :underline="false" type="primary">
+                    <i class="el-icon-view"></i> 调整视野</el-link>
+            </el-tooltip>
         </el-row>
     </div>
 </template>

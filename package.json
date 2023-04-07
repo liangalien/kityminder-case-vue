@@ -17,7 +17,8 @@
     "kity": "^2.0.4",
     "kityminder-case-core": "^1.1.1",
     "vue": "^2.5.16",
-    "vue-color": "^2.8.1"
+    "vue-color": "^2.8.1",
+    "vue-fullscreen": "^2.6.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.0",
