@@ -10,6 +10,8 @@ KityMinder Case Vue(ElementUI)
 
 React版本请移步：[kityminder-case-react](https://github.com/liangalien/kityminder-case-react)
 
+KityMinder Vue非测试用例定制版请移步：[kityminder-vue](https://github.com/liangalien/kityminder-vue)
+
 ## 预览
 [![](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s1.png)](https://raw.githubusercontent.com/liangalien/kityminder-case-vue/main/src/images/s1.png)
 
