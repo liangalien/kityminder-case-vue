@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-      <div>
+    <div>
+      <fullscreen :fullscreen.sync="isFullscreen" :teleport="true">
           <el-tabs v-model="activeName">
               <el-tab-pane label="编辑" name="1">
                   <undo-redo v-if="minder" :minder.sync="minder" :editor.sync="editor"/>
@@ -18,16 +18,14 @@
                   <copy-style v-if="minder" :minder.sync="minder"/> 
                   <layout v-if="minder" :minder.sync="minder"/>
                   <fonts v-if="minder" :minder.sync="minder"/>
-                  <font-style v-if="minder" :minder.sync="minder"/>
               </el-tab-pane>
               <el-tab-pane label="执行" name="3">
                   <result v-if="minder" :minder.sync="minder"/>
               </el-tab-pane>
           </el-tabs>
-      </div>
-
-      <div ref="container" class="minder-container"></div>
-      <navigator v-if="minder" :minder.sync="minder"/>
+          <div ref="container" class="minder-container"></div>
+          <navigator v-if="minder" :minder.sync="minder" :fullscreen.sync="isFullscreen"/>
+      </fullscreen>
   </div>
 </template>
 
@@ -57,14 +55,13 @@
     import Layout from './tabs/layout';
     import Expand from './tabs/expand';
     import Fonts from './tabs/fonts';
-    import FontStyle from './tabs/fontStyle';
 
     import Result from './tabs/result';
 
     export default {
         components: {
             Navigator, UndoRedo, AppendNode, Arrange, Operation, Disabled, Priority, Type,
-            TemplateDropdown, Theme, CopyStyle, Layout, Expand, Fonts, FontStyle, Result
+            TemplateDropdown, Theme, CopyStyle, Layout, Expand, Fonts, Result
         },
         props: {
             autoInit: {
@@ -81,6 +78,7 @@
                 activeName: "1",
                 minder: null,
                 editor: null,
+                isFullscreen: false,
             }
         },
         mounted() {
@@ -127,7 +125,7 @@
     }
 
     .el-tab-pane {
-        height: 50px;
+        height: 52px;
     }
 
     .km-type {

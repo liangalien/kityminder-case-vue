@@ -1,8 +1,8 @@
 <template>
     <div class="km-btn-group">
         <el-row>
-            <el-link :disabled="isDisabled('AppendNextNode')" @click="minder.execCommand('AppendNextNode')" :underline="false" type="primary"><i class="el-icon-top-left"></i> 插入下级</el-link>
-            <el-link :disabled="isDisabled('AppendPrevNode')" @click="minder.execCommand('AppendPrevNode')" :underline="false" type="primary"><i class="el-icon-top-right"></i> 插入上级</el-link>
+            <el-link :disabled="isDisabled('AppendNextNode')" @click="minder.execCommand('AppendNextNode')" :underline="false" type="primary"><i class="el-icon-bottom-right"></i> 插入下级</el-link>
+            <el-link :disabled="isDisabled('AppendPrevNode')" @click="minder.execCommand('AppendPrevNode')" :underline="false" type="primary"><i class="el-icon-top-left"></i> 插入上级</el-link>
         </el-row>
         
         <el-row>
